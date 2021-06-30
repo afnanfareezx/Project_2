@@ -54,7 +54,6 @@ Public Class FrmInsert
         MySQL_Connection.Close()
         MySQL_Connection.Dispose()
 
-
         Form1.Show()
         Me.Close()
     End Sub

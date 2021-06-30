@@ -147,6 +147,7 @@ Partial Class FrmInsert
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(533, 293)
+        Me.ControlBox = False
         Me.Controls.Add(Me.NudQuantity)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtBoxPrice)

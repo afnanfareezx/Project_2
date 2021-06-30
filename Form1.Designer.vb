@@ -25,16 +25,16 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvSport = New System.Windows.Forms.DataGridView()
+        Me.brand = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colour = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.price = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.quantity = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lblBrand = New System.Windows.Forms.Label()
         Me.lblBrandcolour = New System.Windows.Forms.Label()
         Me.lblBrnadprice = New System.Windows.Forms.Label()
         Me.BtnExit = New System.Windows.Forms.Button()
         Me.BtnAddNew = New System.Windows.Forms.Button()
         Me.lblQuantity = New System.Windows.Forms.Label()
-        Me.brand = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colour = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.price = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.quantity = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvSport, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -57,6 +57,26 @@ Partial Class Form1
         Me.dgvSport.Name = "dgvSport"
         Me.dgvSport.Size = New System.Drawing.Size(462, 166)
         Me.dgvSport.TabIndex = 1
+        '
+        'brand
+        '
+        Me.brand.HeaderText = "Brand"
+        Me.brand.Name = "brand"
+        '
+        'colour
+        '
+        Me.colour.HeaderText = "Brand Colour"
+        Me.colour.Name = "colour"
+        '
+        'price
+        '
+        Me.price.HeaderText = "Brand Price (RM)"
+        Me.price.Name = "price"
+        '
+        'quantity
+        '
+        Me.quantity.HeaderText = "Brand Quantity"
+        Me.quantity.Name = "quantity"
         '
         'lblBrand
         '
@@ -122,26 +142,6 @@ Partial Class Form1
         Me.lblQuantity.TabIndex = 9
         Me.lblQuantity.Text = "Brand Quantity :"
         '
-        'brand
-        '
-        Me.brand.HeaderText = "Brand"
-        Me.brand.Name = "brand"
-        '
-        'colour
-        '
-        Me.colour.HeaderText = "Brand Colour"
-        Me.colour.Name = "colour"
-        '
-        'price
-        '
-        Me.price.HeaderText = "Brand Price (RM)"
-        Me.price.Name = "price"
-        '
-        'quantity
-        '
-        Me.quantity.HeaderText = "Brand Quantity"
-        Me.quantity.Name = "quantity"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -150,6 +150,7 @@ Partial Class Form1
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(725, 331)
+        Me.ControlBox = False
         Me.Controls.Add(Me.lblQuantity)
         Me.Controls.Add(Me.BtnAddNew)
         Me.Controls.Add(Me.BtnExit)
